@@ -1,24 +1,25 @@
-# Airline Customer Analysis & Visualization
+# Airline Customer Data Pipeline & Analysis
 
-A data analysis project focused on cleaning flight customer data using **Python** and creating an analytical dashboard in **Power BI**.
+An end-to-end data project demonstrating a complete ETL pipeline: from raw data extraction and Power Query transformation to Python cleaning and Power BI visualization.
 
-## Objective
-To process raw aviation data and visualize key customer metrics, such as membership tiers and demographic distribution.
+## Project Workflow
+1. **Extraction:** Raw airline dataset (`flight.csv`).
+2. **Transformation (Power Query):** Initial filtering, data type adjustments, and structural formatting.
+3. **Refinement (Python):** * Addressed missing values in the `Age` column using statistical imputation (Mean).
+    * Conducted deep cleaning and removed duplicate entries.
+    * Renamed technical headers to user-friendly business terms.
+4. **Visualization:** Interactive dashboard for analyzing customer demographics and loyalty program tiers.
 
 ## Tech Stack
-* **Cleaning:** Python (Pandas)
-* **Analysis:** Jupyter Notebook
-* **Visualization:** Power BI (`.pbix`)
+* **ETL:** Power Query (Excel/Power BI)
+* **Processing:** Python (Pandas)
+* **Visualization:** Power BI (`charts.pbix`)
 
-## Key Steps
-1.  **Data Cleaning:** * Handled missing values in the `Age` column using the mean.
-    * Removed duplicate records.
-    * Standardized column names for better readability (e.g., `FFP_TIER` to `Frequent Flyer Program Tier`).
-2.  **Visualization:**
-    * Designed a Power BI dashboard to track customer gender, membership levels, and flight history.
+## Repository Structure
+* `data/`: Contains the three stages of data (Raw, Post-PowerQuery, Final-Cleaned).
+* `Python_Cleaning.ipynb`: The Python script for final data refinement.
+* `charts.pbix`: The final analytical dashboard.
 
-## Project Structure
-* `Python_Cleaning.ipynb`: Data preprocessing script.
-* `charts.pbix`: Interactive Power BI dashboard.
+
 
 
