@@ -20,4 +20,5 @@ To process raw aviation data and visualize key customer metrics, such as members
 ## Project Structure
 * `Python_Cleaning.ipynb`: Data preprocessing script.
 * `charts.pbix`: Interactive Power BI dashboard.
-* `requirements.txt`: Necessary Python libraries.
+
+
